@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartik Prayagi- Programmer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" class="style">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Kartik's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/services.html">Services</a></li>
+                    <li><a href="/projects.html">Projects</a></li>
+                    <li><a href="/contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Kartik Prayagi</span>
+                <div>and I am passionate about:</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="Resume.docx" target="_blank" class="btn">Download Resume</a>
+                    <a class="btn" href="https://www.linkedin.com/in/kartik-prayagi-46a915271" target="_blank">Visit
+                        LinkedIn Profile</a>
+
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="dev.png" alt="image">
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="secondSection">
+            <span class="expertise">What I am expertise in</span>
+            <h1>Skills</h1>
+
+            <div class="box">
+                <div class="horizontal">
+                    <div class="vertical">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <p class="title">Programming Languages</p>
+                                </div>
+                                <div class="flip-card-back">
+                                    <li class="subtitle">Python</li>
+                                    <li class="subtitle">C</li>
+                                    <li class="subtitle">C++</li>
+                                    <li class="subtitle">Javascript</li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vertical">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <p class="title">Web Development</p>
+                                </div>
+                                <div class="flip-card-back">
+                                    <li class="title2">HTML</li>
+                                    <li class="title2">CSS</li>
+                                    <li class="title2">Javascript</li>
+                                    <br>
+                                    <pl class="title">Front-End:</pl>
+                                    <li class="title2">React</li>
+                                    <li class="title2">Javascript</li>
+                                    <br>
+                                    <p class="title">Back-End:</p>
+                                    <li class="title2">Node.Js</li>
+                                    <li class="title2">Django</li>
+                                    <li class="title2">Flask</li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vertical">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <p class="title">Frameworks and Libraries</p>
+                                </div>
+                                <div class="flip-card-back">
+                                    <li class="subtitle">Flask</li>
+                                    <li class="subtitle">Django</li>
+                                    <li class="subtitle">Electron Js</li>
+                                    <li class="subtitle">React Native</li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vertical">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <p class="title">Soft Skills</p>
+                                </div>
+                                <div class="flip-card-back">
+                                    <li class="title2">Communication</li>
+                                    <br>
+                                    <li class="title2">Problem Solving</li>
+                                    <br>
+                                    <li class="title2">Team Collaboration</li>
+                                    <br>
+                                    <li class="title2">Time Management</li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Software Development,', 'Web Development,', 'AI&amp;ML.'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
