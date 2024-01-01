@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 85px;
+    background-color: rgb(0, 0, 60);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: rgb(123, 123, 207);
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 0;
+}
+
+.firstSection>div {
+    width: 30%;
+}
+
+.leftSection {
+    width: 40px;
+    font-size: 2rem;
+    margin: 60px 0;
+}
+
+.rightSection img {
+    width: 110%;
+    height: 90%;
+    margin: 40px 0;
+    border-radius: 59px;
+    background: linear-gradient(45deg, #2a2d76, #32368c);
+    box-shadow: 17px -17px 34px #1e2054,
+        -17px 17px 34px #4044b2;
+}
+
+.purple {
+    color: rgb(170, 107, 228);
+}
+
+#element {
+    color: blueviolet;
+    font-size: 2.4rem;
+}
+
+.secondSection {
+    max-width: 80vw;
+    margin: auto;
+    height: 90vh;
+}
+
+main hr {
+    border: 0;
+    background-color: blue;
+    height: 1px;
+    margin: 25px 80px;
+}
+
+.expertise {
+    margin-top: 2px;
+    color: gray;
+}
+
+.secondSection .box {
+    background-color: white;
+    width: 1px;
+}
+
+.secondSection .horizontal {
+    height: 1px;
+    width: 1250px;
+    background-color: white;
+    display: flex;
+    margin: 80px 0;
+}
+
+.secondSection .vertical {
+    height: 100px;
+    width: 1px;
+    background-color: white;
+    margin: 0 150px;
+}
+
+.buttons .btn {
+    text-decoration: none;
+    margin-top: 30px;
+    --clr-font-main: hsla(0 0% 20% / 100);
+    --btn-bg-1: rgb(79, 76, 227);
+    --btn-bg-2: rgb(25, 25, 189);
+    --btn-bg-color: hsla(360 100% 100% / 1);
+    --radii: 0.5em;
+    cursor: pointer;
+    padding: 0.9em 1.4em;
+    min-width: 120px;
+    min-height: 44px;
+    font-size: var(--size, 1rem);
+    font-family: "Segoe UI", system-ui, sans-serif;
+    font-weight: 500;
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+    border: none;
+    border-radius: var(--radii);
+    color: var(--btn-bg-color);
+    box-shadow: 0px 0px 20px rgba(60, 28, 218, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+}
+
+.btn:hover {
+    background-position: right top;
+}
+
+.btn:is(:focus, :focus-visible, :active) {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .btn {
+        transition: linear;
+    }
+}
+
+
+
+.flip-card {
+    background-color: transparent;
+    width: 210px;
+    height: 350px;
+    perspective: 1000px;
+    font-family: sans-serif;
+    margin: 100px -100px;
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: left;
+    text-wrap: nowrap;
+}
+
+.title2 {
+    font-size: 1.2em;
+    font-weight: 750;
+    text-align: left;
+    margin: 0;
+    text-wrap: nowrap;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid rgb(80, 112, 255);
+    border-radius: 1rem;
+}
+
+.flip-card-front {
+    background: linear-gradient(120deg, rgb(19, 46, 224) 60%, rgb(41, 14, 162) 88%,
+            rgb(8, 29, 124) 40%, rgba(7, 10, 98, 0.677) 48%);
+    color: rgb(255, 200, 0);
+}
+
+.flip-card-back {
+    background: linear-gradient(120deg, rgb(19, 46, 224) 60%, rgb(41, 14, 162) 88%,
+            rgb(8, 29, 124) 40%, rgba(7, 10, 98, 0.677) 48%);
+    color: white;
+    transform: rotateY(180deg);
+}
