@@ -78,6 +78,12 @@ nav ul li a:hover {
     font-size: 2.4rem;
 }
 
+.thirdSection {
+    max-width: 80vw;
+    margin: auto;
+    height: 100vh;
+}
+
 .secondSection {
     max-width: 80vw;
     margin: auto;
@@ -96,12 +102,12 @@ main hr {
     color: gray;
 }
 
-.secondSection .box {
+.thirdSection .box {
     background-color: white;
     width: 1px;
 }
 
-.secondSection .horizontal {
+.thirdSection .horizontal {
     height: 1px;
     width: 1250px;
     background-color: white;
@@ -109,16 +115,19 @@ main hr {
     margin: 80px 0;
 }
 
-.secondSection .vertical {
+.thirdSection .vertical {
     height: 100px;
     width: 1px;
     background-color: white;
     margin: 0 150px;
 }
 
+.buttons1 {
+    margin-top: 50px;
+}
+
 .buttons1 .btn {
     text-decoration: none;
-    margin-top: 30px;
     --clr-font-main: hsla(0 0% 20% / 100);
     --btn-bg-1: rgb(79, 76, 227);
     --btn-bg-2: rgb(25, 25, 189);
@@ -154,6 +163,7 @@ main hr {
         transition: linear;
     }
 }
+
 .buttons2 .btn {
     text-decoration: none;
     --clr-font-main: hsla(0 0% 20% / 100);
@@ -196,11 +206,11 @@ main hr {
 
 .flip-card {
     background-color: transparent;
-    width: 210px;
+    width: 250px;
     height: 350px;
     perspective: 1000px;
     font-family: sans-serif;
-    margin: 100px -100px;
+    margin: 100px -130px;
 }
 
 .title {
@@ -298,7 +308,7 @@ main hr {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -319,3 +329,190 @@ main hr {
     display: block;
 }
 
+
+
+
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: #050a3b;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-info,
+.social-links {
+    flex: 1 1 300px;
+    margin-right: 20px;
+}
+
+.contact-info h4,
+.social-links h4 {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.social-links ul {
+    list-style-type: none;
+    padding: 3px;
+    margin: 0;
+}
+
+.social-links li {
+    justify-content: space-evenly;
+    margin-bottom: 8px;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    margin-top: 20px;
+    margin-left: 160px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .social-links {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+.text-content {
+    flex: 2;
+    padding: 20px;
+}
+
+.text-content h2 {
+    color: #333;
+    font-size: 2rem;
+}
+
+.text-content p {
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+
+.card {
+    margin-left: 450px;
+    width: 17em;
+    height: 23em;
+    background: #36246e;
+    transition: 1s ease-in-out;
+    clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card span {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: block;
+    font-size: 1em;
+}
+
+.card .info {
+    font-weight: 400;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 0.72em;
+    margin: 1em;
+}
+
+.card .img {
+    width: 4.8em;
+    height: 4.8em;
+    background: white;
+    border-radius: 15px;
+    margin: auto;
+}
+
+.card .share {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+
+.card .resumebtn {
+    padding: 0.8em 1.7em;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    transition: .4s ease-in-out;
+    text-decoration: none;
+}
+
+.card .resumebtn:hover {
+    background: rgb(72, 55, 186);
+    color: white;
+    cursor: pointer;
+}
+
+.profileImg img {
+    margin-top: 28px;
+    margin-left: 39px;
+    height: 220px;
+    width: 200px;
+}
+
+.card .share {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.card a {
+    color: white;
+    transition: .4s ease-in-out;
+}
+
+.card .git:hover {
+    color: rgb(255, 255, 255);
+}
+.card .twit:hover {
+    color: rgb(0, 140, 255);
+}
+.card .insta:hover {
+    color: rgb(209, 68, 176);
+}
+.card .yt:hover {
+    color: rgb(255, 0, 0);
+}
